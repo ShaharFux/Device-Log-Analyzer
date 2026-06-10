@@ -1,0 +1,7 @@
+2026-06-06 10:00:00 deviceA INFO startup completed
+2026-06-06 10:01:00 deviceA ERROR connection timeout
+2026-06-06 10:02:00 deviceB WARNING high memory usage
+2026-06-06 10:03:00 deviceA ERROR failed to read sensor
+2026-06-06 10:04:00 deviceB ERROR disk write failed
+2026-06-06 10:05:00 deviceC INFO heartbeat
+2026-06-06 10:06:00 deviceA ERROR reboot required
