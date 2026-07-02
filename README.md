@@ -392,22 +392,6 @@ This is important for automation, scripts, CI, and system-level tests.
 
 ---
 
-## Interview Explanation
-
-Short version:
-
-> I built a small Device Log Analyzer in Python. It reads device log files, parses each line according to a defined format, validates the input, and produces summaries such as counts by severity and errors by device. I structured it with separate parser and analyzer modules, added a CLI, and tested it at multiple levels: unit tests, negative tests, integration tests, and CLI/system-ish tests using subprocess.
-
-More technical version:
-
-> The project simulates a small automation/debugging tool. I focused not only on the happy path, but also on failure modes: invalid timestamps, unsupported severity values, missing files, malformed log lines, and invalid CLI usage. In the CLI tests, I verify return codes, stdout, and stderr, which is closer to how a real system tool should be tested.
-
-Why it is relevant to System Software Test & Development:
-
-> In system software testing, logs are often used to investigate failures and understand system behavior. This project demonstrates the ability to build a small tool that parses logs, validates structured input, extracts useful information, and is covered by tests at several levels.
-
----
-
 ## Current Status
 
 Implemented:
